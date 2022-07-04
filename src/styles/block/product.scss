@@ -1,0 +1,160 @@
+.product {
+  font-family: "Roboto", sans-serif;
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+
+  display: grid;
+  gap: 20px;
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #b1b1b1;
+
+    &--code {
+      text-align: right;
+    }
+
+    &--price {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    &--cashback {
+      color: #000;
+      background-color: #ecceb0;
+      font-weight: 700;
+      padding: 0 2px;
+    }
+
+    &--disc-amount {
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__photo {
+    text-align: center;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__content {
+    display: grid;
+    gap: 20px;
+  }
+
+  &__discount {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__disc-item {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    width: 60px;
+    text-align: center;
+    text-transform: uppercase;
+
+    background-color: #e05555;
+    color: #fff;
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .product__stars {
+    display: flex;
+    justify-content: space-between;
+    height: 16px;
+    width: 96px;
+  }
+  
+  .product__star {
+    background-image: url(../images/star-active.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    margin-right: 4px;
+  }
+
+  &__prices {
+    display: grid;
+    gap: 5px;
+  }
+
+  &__amounts {
+    display: flex;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  &__amount {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #e05555;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    border: none;
+    cursor: pointer;
+
+    &--buy {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      width: 150px;
+  
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 40px;
+      color: #fff;
+      background-color: #08781f;
+  
+      border-radius: 20px;
+    }
+
+    &--icon {
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 40px;
+      height: 40px;
+
+      &-favorite {
+        background-image: url(../images/icon-heart--gray.svg);
+      }
+
+      &-compare {
+        background-image: url(../images/icon-compare--gray.svg);
+      }
+    }
+  }
+
+  &__icons {
+    display: flex;
+  }
+}
